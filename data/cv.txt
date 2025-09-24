@@ -1,0 +1,64 @@
+## Ausbildung
+
+09/2023 bis 07/2026
+**Technische Hochschule Brandenburg** – Bachelor of Science, Informatik
+- Vertiefung im Bereich Intelligente Systeme
+- Stipendium durch die Hochschulstiftung der THB
+
+2021 bis 2023
+**Heinrich-Böll Oberschule Berlin** – Allgemeine Hochschulreife
+Engagement als Schülersprecher und Bezirksschülersprecher
+
+---
+
+## Berufserfahrung
+
+02/2024 bis 07/2026
+*Studentische Hilfskraft, Projekt „regiocom“ – Künstliche Intelligenzen*
+- Aufbau von Wissensbasen für RAG-Systeme
+- Optimierung und Evaluierung von Trainingsdaten
+- Entwicklung in Python
+
+01/2024 bis 06/2025
+*Lehrbeauftragter, Lernstudio Barbarossa*
+- Fachliche Nachhilfe für MINT, insb. Informatik für alle Klassenstufen
+
+06/2023 bis 01/2024
+*Studentische Hilfskraft, Marketing*
+- Messeorganisation und Durchführung
+- Planung und Durchführung von Workshops
+- Studienberatung
+
+---
+
+## Projekterfahrung
+
+**2025**
+*Tool zur KI-gestützten Extraktion von Kundenanfragen*
+- Python-Anwendung, die Anfragen aus Kundenmails unter Verwendung eines LLM filtert und überflüssige Textbausteine entfernt
+
+**2024**
+*Cloudbasierte CRUD-Fotoplattform (Semesterprojekt)*
+- Entwicklung einer auf AWS basierenden Plattform zum Upload von Fotos mit Python
+
+---
+
+## Interessen und Fähigkeiten
+
+**Sprachen:** Deutsch (Muttersprache), Englisch (CEFR C1), Französisch (CEFR B1)
+
+**Stärken:** Organisationsvermögen, Flexibilität, Eigeninitiative
+
+**Technologien:** Python, AWS, SQL, JavaScript, GitHub
+
+**Interessen:** Machine Learning, IT-Security, Schach
+
+---
+
+## Social Media, Konten und Referenzen
+
+*LinkedIn: https://www.linkedin.com/in/yousuf-yesil/*
+*GitHub: https://github.com/yousufyesil*
+*Mail: yousufyesil@icloud.com*
+
+*Brandenburg a.d.H, 23.09.2025*

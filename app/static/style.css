@@ -1,0 +1,35 @@
+.input_area {
+    display: flex;              /* Aktiviert Flexbox */
+    flex-direction: row;        /* Elemente nebeneinander */
+    align-items: center;        /* Vertikale Zentrierung der Kinder */
+    justify-content: center;    /* Horizontale Zentrierung */
+    gap: 20px;                  /* Abstand zwischen Kreis und Bubble */
+
+    /* Zentrierung des gesamten Containers auf der Seite */
+    position: fixed;            /* Oder absolute */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* Alternative: Wenn der Container den ganzen Viewport füllen soll */
+    /* height: 100vh;
+    width: 100vw; */
+}
+
+.chat_bubble {
+    width: 839px;
+    height: 118px;
+    flex-shrink: 0;
+
+    border-radius: 100px;
+    border: 3px solid #888181;
+    background: #F8F8F8;
+}
+
+.avatar {
+    width: 118px;
+    height: 118px;
+    flex-shrink: 0;
+
+    /* SVG-spezifische Eigenschaften entfernt, da sie im HTML definiert sind */
+}

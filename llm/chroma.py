@@ -1,0 +1,51 @@
+import chromadb
+from chromadb.utils import embedding_functions
+import uuid
+from llm.chunck_md import split_by_h2
+
+COLLECTION_NAME = "vDB"
+EMBEDDING_MODEL = "intfloat/multilingual-e5-large-instruct"
+
+
+
+ef = (embedding_functions.SentenceTransformerEmbeddingFunction
+      (EMBEDDING_MODEL))
+
+
+client = chromadb.PersistentClient(path="./vDB")
+
+client.delete_collection(COLLECTION_NAME)
+
+collection = client.get_or_create_collection(COLLECTION_NAME, embedding_function=ef)
+
+with open("../data/cv.txt", "r") as f:
+   raw_data = f.read()
+
+data = split_by_h2(raw_data)
+
+
+passages = [f"passage: {chunk}" for chunk in data]
+
+collection.add(
+    ids=[str(uuid.uuid4()) for _ in range(len(passages))],
+    documents=passages
+)
+
+
+print(collection.count())
+results = collection.query(
+    query_texts=["Ausbildung und Stipendium"],
+    n_results=1
+)
+
+for i, docs in enumerate(results["documents"]):
+    print(f"Query {i}:")
+    for d in docs:
+        print(d)       # gibt den Text mit echten \n aus
+        print("-" * 40)
+
+
+
+def reload_vDB() -> None:
+    #TODO Datenbank zurücksetzen und erneut laden
+    return None
