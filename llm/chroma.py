@@ -44,6 +44,12 @@ for i, docs in enumerate(results["documents"]):
         print(d)       # gibt den Text mit echten \n aus
         print("-" * 40)
 
+def create_vDB(collection_name : str = "vDB", embedding_modell : str = "intfloat/multilingual-e5-large-instruct") -> None:
+    ef = (embedding_functions.SentenceTransformerEmbeddingFunction
+          (embedding_modell))
+    create_client = chromadb.PersistentClient(path=f"./{collection_name}")
+    create_client.get_or_create_collection(collection_name, embedding_function=ef)
+    del create_client
 
 
 def reload_vDB(collection_name : str = "vDB") -> None:
