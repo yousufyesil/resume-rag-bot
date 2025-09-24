@@ -46,6 +46,9 @@ for i, docs in enumerate(results["documents"]):
 
 
 
-def reload_vDB() -> None:
-    #TODO Datenbank zurücksetzen und erneut laden
+def reload_vDB(collection_name : str = "vDB") -> None:
+
+    delete_client = chromadb.PersistentClient(path=f"./{collection_name}")
+    delete_client.delete_collection(collection_name)
+    del delete_client
     return None
